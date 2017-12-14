@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Foodmap</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<!-- vista splash -->
+  <section id="splash" class="text-center">
+    <div class="row">
+      <div class="col-xs-12">
+        <div>
+          <h1>Foodmap</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- header -->
+  <div id="principal">
+    <header>
+      <div class="line">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12">
+            <h2>Foodmap</h2>
+          </div>
+        </div>
+      </div>
+    </header>
+  <!-- seccion del mapa -->
+    <section>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12">
+          <div id="map"></div>
+        </div>
+      </div>
+    </section>
+  <!-- seccion filtrar -->
+    <section class="filter">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12">
+          <h2>Comida cerca de ti</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12">
+          <input type="text" class="txt-filter" placeholder="filtrar restaurantes ">
+          <button class="btn btn-warning filter"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+        </div>
+      </div>
+    </section>
+<!-- lista restaurants -->
+    <div class="images">
+      <div class="row">
+        <div class="col-xs-12">
+          <ul>
+            <li><img src="assets/img/rest1.jpg" alt=""></li>
+            <li><img src="assets/img/rest2.jpg" alt=""></li>
+            <li><img src="assets/img/rest3.jpg" alt=""></li>
+            <li><img src="assets/img/rest4.jpg" alt=""></li>
+            <li><img src="assets/img/rest5.jpg" alt=""></li>
+            <li><img src="assets/img/rest6.jpg" alt=""></li>
+            <li><img src="assets/img/rest7.jpg" alt=""></li>
+            <li><img src="assets/img/rest8.jpg" alt=""></li>
+            <li><img src="assets/img/rest9.jpg" alt=""></li>
+            <li><img src="assets/img/rest10.jpg" alt=""></li>
+            <li><img src="assets/img/rest5.jpg" alt=""></li>
+            <li><img src="assets/img/rest8.jpg" alt=""></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- scripts -->
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/AIzaSyDEkcmfU_IK-w9IZXGUD9mfYOWG8o0neIA3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!--  API de google maps -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEkcmfU_IK-w9IZXGUD9mfYOWG8o0neIA&callback=initMap"
+    async defer></script>
+  <script src="assets/js/data-restorant.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
